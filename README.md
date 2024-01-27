@@ -1,4 +1,4 @@
-# Trail-Bot
+# Suggestion-Bot
 ## Bot futters :
 1) send a suggestions 
 2) approve / deny it by admins 
