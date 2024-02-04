@@ -54,11 +54,11 @@ export default {
 					}
 				}
 			};
-			await readDir(COMMAND_DIR);
+			await readDir(COMMAND_DIR).catch((err) => null);
 		};
 
 		await registerDir("slashCommands");
-		await registerDir("contextMenus");
+		await registerDir("contextMenus").catch((err) => null);
 		// const rest = new REST({ version: '10' }).setToken(config.token);
 		// rest
 		// 	.put(Routes.applicationCommands(client.user!.id), { body: commands})
